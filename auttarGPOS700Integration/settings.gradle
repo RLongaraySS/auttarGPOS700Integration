@@ -1,0 +1,2 @@
+rootProject.name = "auttarGPOS700Integration"
+include ':app'
