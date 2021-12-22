@@ -17,7 +17,7 @@ import br.com.gertec.gedi.GEDI;
 import br.com.gertec.gedi.enums.GEDI_PRNTR_e_Alignment;
 import br.com.gertec.gedi.enums.GEDI_PRNTR_e_Status;
 import br.com.gertec.gedi.exceptions.GediException;
-import br.com.gertec.gedi.impl.Gedi;
+//import br.com.gertec.gedi.impl.Gedi;
 import br.com.gertec.gedi.interfaces.IGEDI;
 import br.com.gertec.gedi.interfaces.IPRNTR;
 import br.com.gertec.gedi.structs.GEDI_PRNTR_st_PictureConfig;
@@ -55,30 +55,31 @@ public class GertecPrinter {
      *
      * @param c = Context atual que esta sendo inicializada a class
      */
-    /*
+
     public GertecPrinter(Context c) {
         this.context = c;
         startIGEDI();
     }
-     */
+
 
 
     /**
      * Método construtor da classe TSG 800
      * @param a = Activity  atual que esta sendo inicializada a class
      */
+    /*
     public GertecPrinter(Activity a) {
         this.activity = a;
         startIGEDI(a);
     }
-
+*/
     /**
      * Método que instância a classe GEDI da lib
      *
      * @apiNote = Este mátodo faz a instância da classe GEDI através de uma Thread.
      *          Será sempre chamado na construção da classe. Não alterar...
      */
-        /*
+
     private void startIGEDI() {
         new Thread(() -> {
             GEDI.init(this.context);
@@ -91,7 +92,7 @@ public class GertecPrinter {
             }
         }).start();
     }
-         */
+
 
 
 
@@ -104,7 +105,7 @@ public class GertecPrinter {
      *            Não alterar...
      *
      */
-
+    /*
     private void startIGEDI(Activity a) {
         new Thread(() -> {
             iGedi = new Gedi(a);
@@ -117,6 +118,8 @@ public class GertecPrinter {
             }
         }).start();
     }
+
+     */
 
 
     /**

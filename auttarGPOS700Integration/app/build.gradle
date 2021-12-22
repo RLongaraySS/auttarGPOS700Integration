@@ -51,11 +51,12 @@ dependencies {
     repositories {
         maven {
             name = "auttar"
-            url = "file://Users\\rodrigolongaray\\PaymentSDKAuttar-2.12.5"
+            url = "file://Users\\rodrigolongaray\\PaymentSDKAuttar-2.12.5-SNAPSHOT"
         }
 
     }
-    implementation ("br.com.auttar.mobile:payment-sdk-ctffastRelease:2.12.5")
+    implementation ("br.com.auttar.mobile:payment-sdk-ctffastRelease:2.12.5-SNAPSHOT")
 
-    implementation(name: 'libgedi-1.14.15.3-gpos700-payment-debug', ext: 'aar')
+    //implementation(name: 'libgedi-1.14.15.3-gpos700-payment-debug', ext: 'aar')
+    implementation 'com.gertec:libgedi-1.14.15.3-gpos700-payment-release@aar'
 }
